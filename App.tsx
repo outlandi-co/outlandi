@@ -1,11 +1,4 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './app/screens/HomeScreen';
-import FileUploadScreen from './app/screens/FileUploadScreen';
-import ImageUploadScreen from './app/screens/ImageLoaddScreen';
-import CameraOverlayScreen from './app/screens/CameraOverlay';
-import CameraCaptureScreen from './app/screens/CameraCaptureScreen';
+import ImageEditorScreen from './screens/ImageEditorScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,6 +11,7 @@ export default function App() {
         <Tab.Screen name="ImageUpload" component={ImageUploadScreen} />
         <Tab.Screen name="CameraOverlay" component={CameraOverlayScreen} />
         <Tab.Screen name="CameraCapture" component={CameraCaptureScreen} />
+        <Tab.Screen name="ImageEditor" component={ImageEditorScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
