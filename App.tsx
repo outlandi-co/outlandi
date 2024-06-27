@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './screens/HomeScreen';
-import FileUploadScreen from './screens/FileUploadScreen';
-import ImageUploadScreen from './screens/ImageUploadScreen';
-import CameraOverlayScreen from './screens/CameraOverlayScreen';
+import HomeScreen from './app/screens/HomeScreen';
+import FileUploadScreen from './app/screens/FileUploadScreen';
+import ImageUploadScreen from './app/screens/ImageLoaddScreen';
+import CameraOverlayScreen from './app/screens/CameraOverlay';
+import CameraCaptureScreen from './app/screens/CameraCaptureScreen';
 
 const Tab = createBottomTabNavigator();
 
